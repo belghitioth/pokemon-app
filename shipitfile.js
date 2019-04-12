@@ -5,13 +5,13 @@ module.exports = shipit => {
   
     shipit.initConfig({
       default: {
-        repositoryUrl: 'git@github.com:belghitioth/pokemon-app.git'
-	deployTo: '/home/ubuntu/pokemon-app',
+        repositoryUrl: 'git@github.com:belghitioth/pokemon-app.git',
+	deployTo: 'home/ubuntu/pokemon-app',
 	deleteOnRollback : false,
 	keepReleases: 2
       },
       staging: {
-        servers: 'ubuntu@ec2-35-180-227-120.eu-west-3.compute.amazonaws.com',
+        servers: 'ec2-user@ec2-35-180-227-120.eu-west-3.compute.amazonaws.com',
         key: '~/OthKey.pem',
       }
     });
