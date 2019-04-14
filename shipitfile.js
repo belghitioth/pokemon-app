@@ -15,9 +15,4 @@ module.exports = shipit => {
         key: '~/OthKey.pem',
       }
     });
-
-  shipit.blTask('build',async function() {
-	await shipit.remote('cd');
-	shipit.remote('pwd');
-	});	
   };
